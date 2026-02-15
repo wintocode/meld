@@ -60,7 +60,7 @@ Each CV input can be assigned to any bus on the Disting NT (0 = disconnected).
 | Drift CV       | Modulates drift amount (±20% of range per volt) |
 | Global Bend CV | Modulates bend amount (±20% of range per volt) |
 | Global Fold CV | Modulates fold amount (±20% of range per volt) |
-| Global VCA CV  | Amplitude modulation — scales the VCA level |
+| Global VCA CV  | Modulates VCA level (±20% of range per volt) |
 
 ## Waveform Shape
 

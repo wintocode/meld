@@ -407,7 +407,7 @@ static void step(
         // Global VCA with CV
         float vca = p->globalVCA;
         if ( cvGlobalVCA )
-            vca *= fmaxf( 0.0f, cvGlobalVCA[i] * 0.2f );
+            vca = fminf( 1.0f, fmaxf( 0.0f, vca + cvGlobalVCA[i] * 0.2f ) );
 
         // Advance all 8 drifts once per output sample (at base rate, not oversampled)
         float driftVal[NUM_VOICES];
